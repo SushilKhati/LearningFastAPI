@@ -4,7 +4,7 @@ import models
 from database import engine
 import os
 from fastapi.middleware.cors import CORSMiddleware
-os.system('cls')
+#os.system('cls')
 
 #pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
