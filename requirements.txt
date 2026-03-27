@@ -1,2 +1,9 @@
 fastapi
-uvicorn
+uvicorn[standard]
+pydantic
+uuid
+python-multipart
+sqlalchemy
+python-jose
+python-multipart
+psycopg[binary]
