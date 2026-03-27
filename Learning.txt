@@ -1,0 +1,34 @@
+
+
+installation of uv
+    pip install uv
+create virtual environment
+    uv init # Initialize project workspace or folder location
+    uv venv # creats virtual environment
+   
+NOTE: uv python install 3.12 We can also intall a specfic version python.
+    uv python install 3.12
+    uv venv --python 3.12
+    => It is Done if we need particular version without impacting the base version installed.
+
+Activate environment in ps terminal hit below line.
+ .venv\Scripts\activate
+
+To activate environment - .venv\Scripts\Activate.ps1 (Applicable for this local env as direct ps run script is locked)
+
+To install libraries at once we can create requirements.txt file in workspace folder then
+ write all the required library names. then hit command uv add -r requirements.txt
+
+uv add ipykernal # this is done to create jupiter notepad
+
+How to terminate uvicorn forcefully
+
+in cmd 
+netstat -ano | findstr :8000
+
+taskkill /PID 87088 /F   
+
+http://127.0.0.1:8000/product/1
+
+
+uvicorn product.main:app --reload
